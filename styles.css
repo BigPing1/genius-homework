@@ -1,0 +1,118 @@
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+:root {
+  --color-brand-blue: #2b7fff;
+  --color-brand-light: #ffffff;
+  --color-primary-dark: #011c44;
+}
+
+/* general style */
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-primary-dark);
+}
+ul {
+  list-style-type: none;
+}
+address {
+  font-style: normal;
+}
+footer {
+  background-color: var(--color-primary-dark);
+}
+/* class style */
+.section-tytle {
+  font-size: 64px;
+  font-family: Play, sans-serif;
+  font-weight: 700;
+}
+.section-tytle.center {
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+  color: var(--color-primary-dark);
+}
+.link:hover {
+  color: var(--color-brand-blue);
+  font-weight: 700;
+}
+.button {
+  height: 56px;
+  background-color: var(--color-brand-blue);
+  color: #ffffff;
+  border: 1px solid var(--color-brand-blue);
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.button.discount {
+  width: 232px;
+}
+.button.write {
+  width: 299px;
+}
+.button:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+.accent {
+  color: var(--color-brand-blue);
+}
+.accent.capitalize {
+  text-transform: capitalize;
+}
+.section-text {
+  font-size: 22px;
+}
+/* Cosmetology-clinic section */
+
+.hero-tytle {
+  color: #2b7fff;
+  font-family: Play, sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  text-transform: capitalize;
+  line-height: 1px;
+}
+.discount-text {
+  color: #4a4a4a;
+  font-size: 12px;
+}
+
+/* section about us */
+.about-accent {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+/* footer */
+.link.footer {
+  color: var(--color-brand-light);
+  font-size: 16px;
+}
+.data-protected {
+  color: #747272;
+  font-size: 13px;
+}
